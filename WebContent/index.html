@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/sb-admin.css" />
+	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<title>Insert title here</title>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<h1>Sushitter</h1>
+				<div class="panel-heading">
+					<div class="row">
+						<div class="col-md-4">
+							<input id="tw_name" type="text" class="form-control input-sm" placeholder="Type your name" />
+						</div>
+						<div class="col-md-4">
+							<select id="tw_emotion" class="form-control input-sm">
+								<option selected="selected" value="1">気分は最高！</option>
+								<option value="2">普通の精神状態</option>
+								<option value="3">気分は最悪…</option>
+							</select>
+						</div>
+						<div class="col-md-2">
+							<button class="btn btn-info btn-sm" id="learn">
+								Learn
+							</button>
+						</div>
+						<div class="col-md-2">
+							<button class="btn btn-info btn-sm" id="test">
+								Test
+							</button>
+						</div>
+					</div><p></p>
+					<div class="input-group">
+						<input id="tw_content" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+						<span class="input-group-btn">
+							<button class="btn btn-info btn-sm" id="tweet">
+								Tweet
+							</button>
+						</span>
+					</div>
+				</div>
+				<div class="chat-panel panel panel-default">
+					<div class="panel-heading">
+						<i class="fa fa-comments fa-fw"></i>Timeline
+						<div class="btn-group pull-right">
+							<input id="getTwsfrom" size="1"></input>件目から<input id="getTwsNum" size="1"></input>件を
+							<span class="getTweets"><button class="btn btn-info btn-sm" id="getTweets">取得</button></span>
+						</div>
+					</div>
+					<div class="panel-body">
+						<ul class="chat" id="chat">
+						</ul>
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel .chat-panel -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>

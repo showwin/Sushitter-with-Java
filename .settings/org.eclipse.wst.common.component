@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="JSONRPCService">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/test"/>
+        <dependent-module archiveName="org.springframework.asm-3.0.6.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/lib/spring/org.springframework.asm-3.0.6.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.core-3.0.6.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/lib/spring/org.springframework.core-3.0.6.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.context-3.0.6.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/lib/spring/org.springframework.context-3.0.6.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jp.go.nict.langrid.servicecontainer.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jp.go.nict.langrid.servicecontainer/jp.go.nict.langrid.servicecontainer">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.expression-3.0.6.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/lib/spring/org.springframework.expression-3.0.6.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.context.support-3.0.6.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/lib/spring/org.springframework.context.support-3.0.6.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.springframework.beans-3.0.6.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/lib/spring/org.springframework.beans-3.0.6.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jp.go.nict.langrid.commons.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jp.go.nict.langrid.commons/jp.go.nict.langrid.commons">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="guava-15.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/lib/google/guava-15.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/lib/commons/commons-logging-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang-2.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/lib/commons/commons-lang-2.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="derby.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/lib/derby/derby.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="derbyLocale_ja_JP.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/lib/derby/derbyLocale_ja_JP.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="JSONRPCService"/>
+        <property name="java-output-path" value="/JSONRPCService/build/classes"/>
+    </wb-module>
+</project-modules>

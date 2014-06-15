@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>JSONRPCService</display-name>
+
+  <context-param>
+    <param-name>servicesPath</param-name>
+    <param-value>WEB-INF/services</param-value>
+  </context-param>
+
+  <servlet>
+    <servlet-name>JsonRpcServlet</servlet-name>
+    <servlet-class>jp.go.nict.langrid.servicecontainer.handler.jsonrpc.servlet.JsonRpcServlet</servlet-class>
+    <init-param>
+      <param-name>dumpRequests</param-name>
+      <param-value>false</param-value>
+    </init-param>
+    <init-param>
+      <param-name>displayProcessTime</param-name>
+      <param-value>false</param-value>
+    </init-param>
+    <init-param>
+      <param-name>getMethodEnabled</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <!-- **caution** this setting allows cross-domain access. please remove these if you don't need it -->
+    <!--
+    <init-param>
+      <param-name>additionalResponseHeaders</param-name>
+      <param-value>Access-Control-Allow-Origin: *</param-value>
+    </init-param>
+    -->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JsonRpcServlet</servlet-name>
+    <url-pattern>/jsServices/*</url-pattern>
+  </servlet-mapping>
+
+  <mime-mapping>
+    <extension>wsdl</extension>
+    <mime-type>text/xml</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>xsd</extension>
+    <mime-type>text/xml</mime-type>
+  </mime-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
